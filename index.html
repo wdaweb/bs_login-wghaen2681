@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            --logo_height: 90px; 
+        }
+
+        #user_logo {
+            display: inline-block;
+            width: var(--logo_height);
+            height: var(--logo_height);
+            background: url(./img/user_badge.png) no-repeat center/65%;
+            background-color: rgba(0, 123, 255, 0.4);
+        }
+
+        .form-control {
+            height: 50px;
+            border-left-width: 0;
+        }
+
+        #login_button {
+            padding: 10px 0; 
+        }
+    </style>
+</head>
+<body class="vh-100 d-flex justify-content-center align-items-center" style="background: url(./img/2.jpeg) no-repeat center/cover">
+    <div class="shadow-sm rounded" style="width: calc(400px + 4vw); height: 500px; background-color: rgba(255, 255, 255, 0.5);">
+        <div class="container px-5 text-center " style="color: #696969; transform: translateY(calc(var(--logo_height)/(-2)));">
+            <!-- bs4 沒有自己的 icon，需要使用到 google font 或是 font awesome -->
+            <span id="user_logo" class="py-5 rounded-circle"></span>
+            <div class="h1 py-3" style="font-weight: 300;">Sign In</div>
+
+            <div class="py-3 input-group flex-nowrap">
+                <div class="input-group-prepend">
+                    <span class="input-group-text material-icons" style="line-height: 36px;">person</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+
+            <div class="py-3 input-group flex-nowrap">
+                <div class="input-group-prepend">
+                    <span class="input-group-text material-icons" style="line-height: 36px;">lock</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+            </div>
+
+            <div type="button" id="login_button" class="btn my-3 btn-primary btn-lg btn-block">Login</div>
+            
+            <div class="row py-3 text-white">
+                <div class="col form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Default checkbox
+                    </label>
+                </div>
+                <a href="#" class="col text-decoration-none text-white">
+                    Forget password?
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js.css"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
